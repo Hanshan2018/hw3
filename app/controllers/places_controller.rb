@@ -18,7 +18,7 @@ class PlacesController < ApplicationController
 
     @place = Place.new
 
-    # assign user-entered form data to Post's columns
+    # assign user-entered form data to place's columns
     @place["name"] = params["name"]
     
 
