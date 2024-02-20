@@ -1,9 +1,9 @@
 <h1> Places I have been:<h1>
 
-<ul>
-<% for place in @places%>
+  <% for place in @places %>
+     <a href="/places/<%= place["id"] %>">
+      <p><%=place["name"]%></p>
+  <% end %>
 
-  <li><%= place%><li>
-<% end%>
+<a href="/places/new/" class="btn btn-success">Add New Place</a>
 
-</ul>
